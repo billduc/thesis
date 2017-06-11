@@ -1,5 +1,5 @@
 
-\chapter{DEEP LEARNING CHO BÀI TOÁN ĐẾM ĐỐI TƯỢNG.}
+\chapter{DEEP LEARNING CHO BÀI TOÁN ĐẾM ĐỐI TƯỢNG TRONG ẢNH TĨNH.}
 \ifpdf
     \graphicspath{{Chapter3/Chapter3Figs/PNG/}{Chapter3/Chapter3Figs/PDF/}{Chapter3/Chapter3Figs/}}
 \else
@@ -313,7 +313,7 @@ Nói tóm lại, Việc sử dụng Conv có những ưu điểm sau:
 \subsubsection{Lớp Normalization}
 	Lớp Normalization (Norm) là lớp giúp chuẩn hóa dữ liệu đầu ra cho các lớp trong CNN trước khi được truyền đi tiếp. trong những kiến trúc CNN lớn và phức tạp, Lớp Norm sẽ chuẩn hóa các giá trị neural trước khi chúng được truyền đến hàm ReLU. Hàm ReLU tuy giúm rút ngắn thời gian huấn luyện, nhưng nếu không điều chỉnh trọng số phù hợp, hàm ReLU sẽ rất dễ gặp phải vấn đề "dying ReLU" khiến cho mạng trể nên chậm hơn khi huấn luyện. Lớp Norm lúc này sẽ chuẩn hóa và tạo ra các giá trị tích chập phù hợp để tránh cho ReLU rơi vào giá trị 0. Tránh việc gradient xấp xỉ bằng 0 khiến cho tốc độ học của mạng trở nên rất chậm.
 
-\section{Deep Learning cho bài toán đếm đối tượng}
+\section{Áp dụng Deep Learning cho bài toán đếm đối tượng}
 	Từ những kiến thức nền tảng đã trình bài ở hai phần trên, phần này sinh viên sẽ tiền hành trình bày một phương pháp áp dụng giải quyết cho bài toán đếm đối tượng. Cụ thể về chi tiết kỹ thuật và các mô hình được sử dụng để giải quyết bài toán. 
 \subsection{Mô hình đếm đối tượng}
 	Phươn pháp được sử dụng sau đây là một phương pháp thuộc nhóm Counting by Regression. Đầu tiên, Sinh viên sẽ trình bày mô hình tổng quát áp dụng cho bài toán, kèm theo đó là các ký hiệu và công thức tính toán được sử dụng. Đối với phương pháp này, ta định nghĩa lại bài toán đếm đối tượng thành mô hình bài toán ước lượng mật độ đối tượng (density estimation) được đề cập trong công trình của Victor and Zisserman \cite{lempitsky2010learning}. \par
