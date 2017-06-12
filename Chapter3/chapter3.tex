@@ -326,7 +326,7 @@ Nói tóm lại, Việc sử dụng Conv có những ưu điểm sau:
 	Ở đây, p đại diện cho pixel đang xử lý và $\mathcal{N}(p;P,\sigma^2 1_{2\times2})$   là hàm Gaussian hai chiều để ước lượng giá trị tại điểm p,  
 	Từ bản đồ mật độ $D_I$ thu được, ta tính $N_I$ là tổng các đối tượng xuất hiện trong hình bằng cách tính tổng tất cả gác giá trị pixel trên toàn bộ $D_I$ theo công thức.
 	 
-\begin{align}
+\begin{align}\label{ct3} 
    N_I = \sum_{p \in I}D_I(P)
 \end{align}
 
@@ -350,7 +350,8 @@ Bằng cách gán nhãn sử dụng dấu chấm cho mỗi đối tượng và t
 
 
 \subsection{Mô hình CCNN}
-	Trong phần này, sinh viên sẽ trình bày kiến trúc CNN đầu tiên được sử dụng, mô hình Counting Convolutional Neural Networks (CCNN). Kiến trúc của mô hình CCNN bao gồm 6 lớp Convolituonal. Lớp Conv1 và Conv2 sử dụng kernel với kích thước $7 \ times 7$ cùng độ sâu là 32. 
+	Trong phần này, sinh viên sẽ trình bày kiến trúc CNN đầu tiên được sử dụng, mô hình Counting Convolutional Neural Networks (CCNN). Kiến trúc của mô hình CCNN bao gồm 6 lớp Convolituonal. Lớp Conv1 và Conv2 sử dụng kernel với kích thước $7 \times 7$ cùng chiều sâu là 32. Lớp Conv3 chứa kernel $5 \times 5$ cùng chiều sâu 64 và sau đó kết nối với lớp max-pooling có kernel kích thước $2 \times 2$. Conv4 và Conv5 chứa kernel kích thước $1 \times 1$ với chiều sâu tương ứng lần lượt là 1000 và 400. \par 
+	Như đã trình bày trong công thức \eqref{ct3}, mô hình này đề xuất một mô hình học phi tuyến tính (non-linear) đề có thể biểu diễn các đối tượng trong bức ảnh thành một bản đồ mật độ phù hợp với nó. Chính vì thế, ta sẽ huấn luyện mô hình CCNN để giải quyết bài toán này theo lớp bài toán regression. Đề làm được điều này, ta cần kết nối lớp Conv6 với một hàm mất  
 \subsection{Mô hình Hydra CNN}
 \section{Kết chương}
 

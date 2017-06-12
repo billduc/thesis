@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.3.25)  11 JUN 2017 23:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.3.25)  12 JUN 2017 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1734,23 +1734,27 @@ Overfull \hbox (5.99777pt too wide) in paragraph at lines 343--344
  []
 
 
+LaTeX Warning: Reference `ct3' on page 43 undefined on input line 354.
+
+[43 <./Chapter3/Chapter3Figs/mohinh.png>]
+
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 355.
+(hyperref)                removing `\textacute' on input line 356.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 355.
+(hyperref)                removing `\ecircumflex' on input line 356.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 355.
+(hyperref)                removing `\uhorn' on input line 356.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 355.
+(hyperref)                removing `\ohorn' on input line 356.
 
-) [43 <./Chapter3/Chapter3Figs/mohinh.png>] [44]
+) [44]
 \openout2 = `Chapter4/chapter4.aux'.
 
  (./Chapter4/chapter4.tex
@@ -2352,13 +2356,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
  ) 
 Here is how much of TeX's memory you used:
- 9125 strings out of 493304
- 132684 string characters out of 6139871
- 229558 words of memory out of 5000000
- 12065 multiletter control sequences out of 15000+600000
+ 9120 strings out of 493304
+ 132611 string characters out of 6139871
+ 229562 words of memory out of 5000000
+ 12060 multiletter control sequences out of 15000+600000
  35430 words of font info for 86 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,13n,50p,1915b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,50p,1915b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.31} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -2391,7 +2395,7 @@ texlive/texmf-dist/fonts/type1/vntex/vnr/vnr7.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/vntex/vnr/vnr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/vnt
 ex/vnr/vnr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb
 >
-Output written on uitthesis.pdf (66 pages, 5111661 bytes).
+Output written on uitthesis.pdf (66 pages, 5109986 bytes).
 PDF statistics:
  902 PDF objects out of 1000 (max. 8388607)
  751 compressed objects within 8 object streams
